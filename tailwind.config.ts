@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -87,6 +87,18 @@ const config = {
         inter: "var(--font-inter)",
         "ibm-plex-serif": "var(--font-ibm-plex-serif)",
       },
+      fontSize: {
+        '10': '10px',
+        '12': '12px',
+        '14': '14px',
+        '16': '16px',
+        '18': '18px',
+        '20': '20px',
+        '24': '24px',
+        '26': '26px',
+        '30': '30px',
+        '36': '36px',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -104,6 +116,5 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
-
+}
 export default config;
